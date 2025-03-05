@@ -14,14 +14,14 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-To use the Amparo SDK in your project, follow these steps:
+To use the Amparo SDK in your project, follow the next steps:
 
-1. __Generate a GitHub token__
+## Generate a GitHub token
 
 To access the private repository, you will need to generate a GitHub token with
 `read:packages` permissions (see [About permissions for GitHub Packages](https://docs.github.com/en/packages/learn-github-packages/about-permissions-for-github-packages)).
 
-2. __Add the repository to the `build.gradle` file__
+## Add the repository to the `build.gradle` file
 
 First, you need to add the private repository to your `build.gradle` file.
 This repository requires authentication, so you will need to provide your GitHub credentials.
@@ -40,7 +40,7 @@ repositories {
 }
 ```
 
-3. __Gradle configuration__
+## Gradle configuration
 
 In general, the Amparo ID SDK for Android requires the following configurations:
 
