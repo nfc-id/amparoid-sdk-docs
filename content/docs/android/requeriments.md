@@ -14,4 +14,12 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
+The Amparo ID team will provide the following information:
+- API Key
+- API URL
+- SKM Key
+- KSM Key
+- E Cert
+- Access to the private repository containing the SDK
 
+After meeting these requirements, you can proceed with the SDK installation and configuration.

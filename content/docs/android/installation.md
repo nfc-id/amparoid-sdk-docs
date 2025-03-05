@@ -16,7 +16,12 @@ seo:
 
 To use the Amparo SDK in your project, follow these steps:
 
-1. __Add the repository to the `build.gradle` file__.
+1. __Generate a GitHub token__
+
+To access the private repository, you will need to generate a GitHub token with
+`read:packages` permissions (see [About permissions for GitHub Packages](https://docs.github.com/en/packages/learn-github-packages/about-permissions-for-github-packages)).
+
+2. __Add the repository to the `build.gradle` file__
 
 First, you need to add the private repository to your `build.gradle` file.
 This repository requires authentication, so you will need to provide your GitHub credentials.
@@ -35,12 +40,45 @@ repositories {
 }
 ```
 
-2. __Add the dependency to the `build.gradle` file__.
+3. __Add the dependency to the `build.gradle` file__
 
 Next, add the Amparo SDK as a dependency in your `build.gradle` file.
 
 ```
 dependencies {
     implementation("cl.amparo.id:amparo-sdk:1.0.0")
+}
+```
+
+4. __Gradle configuration__
+
+In general, the Amparo ID SDK for Android requires the following configurations:
+
+- minSdk = 28
+- targetSdk = 34
+- jvmTarget = "1.8"
+
+Additionally, since the SDK uses Jetpack Compose, it must be enabled by adding the following to the android section of the build.gradle file:
+
+```
+compileOptions {
+    // Support for Java 8 features
+    coreLibraryDesugaringEnabled true
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+buildFeatures {
+    compose true
+}
+composeOptions {
+  kotlinCompilerExtensionVersion '1.2.0'
+}
+```
+
+The SDK also requires the following dependencies:
+
+```
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
 }
 ```
