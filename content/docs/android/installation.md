@@ -40,17 +40,7 @@ repositories {
 }
 ```
 
-3. __Add the dependency to the `build.gradle` file__
-
-Next, add the Amparo SDK as a dependency in your `build.gradle` file.
-
-```
-dependencies {
-    implementation("cl.amparo.id:amparo-sdk:1.0.0")
-}
-```
-
-4. __Gradle configuration__
+3. __Gradle configuration__
 
 In general, the Amparo ID SDK for Android requires the following configurations:
 
@@ -79,6 +69,7 @@ The SDK also requires the following dependencies:
 
 ```
 dependencies {
+    implementation("cl.amparo.id:amparo-sdk:1.0.0")
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
 }
 ```
