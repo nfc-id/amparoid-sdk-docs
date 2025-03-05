@@ -1,6 +1,6 @@
 ---
-title: "Overview"
-description: "This section describes how to implement the Amparo ID Android SDK in your app."
+title: "Requirements"
+description: "This section describes the requirements to implement the Amparo ID Android SDK in your app."
 summary: ""
 date: 2023-09-07T16:04:48+02:00
 lastmod: 2023-09-07T16:04:48+02:00

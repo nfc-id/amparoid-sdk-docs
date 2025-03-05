@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-description: "This section describes how to implement the Amparo ID Android SDK in your app."
+description: "This section introduces the Amparo ID Android SDK."
 summary: ""
 date: 2023-09-07T16:04:48+02:00
 lastmod: 2023-09-07T16:04:48+02:00
