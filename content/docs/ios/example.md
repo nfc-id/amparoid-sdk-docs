@@ -1,6 +1,6 @@
 ---
-title: "Example Guide"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
+title: "Amparo ID iOS SDK"
+description: "This section describes how to implement the Amparo ID iOS SDK in your app."
 summary: ""
 date: 2023-09-07T16:04:48+02:00
 lastmod: 2023-09-07T16:04:48+02:00
@@ -14,8 +14,10 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.
+Testing the content section.
 
+<!--
 ## Further reading
 
 - Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+-->
