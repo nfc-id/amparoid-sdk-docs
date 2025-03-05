@@ -14,87 +14,33 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-### SDK installation
+To use the Amparo SDK in your project, follow these steps:
 
-The `aar` file provided by Amparo ID can be added as a project dependency by following the official
-Android documentation on [Add your AAR or JAR as a dependency](https://developer.android.com/studio/projects/android-library#psd-add-aar-jar-dependency).
+1. __Add the repository to the `build.gradle` file__.
 
-Steps to follow:
-1. Create a directory within the project to store the `aar` file.
-2. Move the `aar` file to the created directory.
-3. Add the dependency to `build.gradle`:
-```
-dependencies {
-    implementation(files("path_to_aar/amparoIdSdk.aar"))
-}
-```
-Where `path_to_aar/amparoIdSdk.aar` should be replaced with the actual file path.
-4. Synchronize the project with Gradle files.
-
-### Application configuration
-In general, the Amparo ID SDK for Android requires the following configurations:
-- `minSdk = 28`
-- `targetSdk = 34`
-- `jvmTarget = "1.8"`
-
-Additionally, since the SDK uses `Jetpack Compose`, it must be enabled by adding the following to
-the `android` section of the `build.gradle` file:
+First, you need to add the private repository to your `build.gradle` file.
+This repository requires authentication, so you will need to provide your GitHub credentials.
 
 ```
-compileOptions {
-    // Support for Java 8 features
-    coreLibraryDesugaringEnabled true
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-}
-buildFeatures {
-    compose true
-}
-composeOptions {
-  kotlinCompilerExtensionVersion '1.2.0'
+repositories {
+    maven {
+        url = uri("https://maven.pkg.github.com/nfc-id/amparoId-Android-SDK")
+        credentials {
+            username = System.getenv("GITHUB_USER")
+            password = System.getenv("GITHUB_TOKEN")
+        }
+    }
+    google()
+    mavenCentral()
 }
 ```
 
-### Dependencies installation
+2. __Add the dependency to the `build.gradle` file__.
 
-Also, add the following dependencies to your project:
+Next, add the Amparo SDK as a dependency in your `build.gradle` file.
 
 ```
 dependencies {
-    implementation("androidx.core:core-ktx:1.13.1")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.0.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.1")
-    implementation("androidx.activity:activity-compose:1.9.0")
-    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3:1.3.0")
-    implementation("androidx.camera:camera-core:1.3.4")
-    implementation("androidx.camera:camera-camera2:1.3.4")
-    implementation("androidx.camera:camera-lifecycle:1.3.4")
-    implementation("androidx.camera:camera-view:1.3.4")
-    implementation("com.google.mlkit:text-recognition:16.0.0")
-    implementation("com.amplifyframework:aws-auth-cognito:1.29.0")
-    implementation("com.amplifyframework:aws-predictions:1.29.0")
-    implementation("com.amplifyframework.ui:liveness:1.2.6")
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
-    implementation("com.github.ByteAmaze:RNCryptor-Android:1.0")
-    implementation("com.datatheorem.android.trustkit:trustkit:1.1.3")
-    implementation("org.bouncycastle:bcpkix-jdk15on:1.65")
-    implementation("com.scottyab:rootbeer-lib:0.1.1")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("commons-io:commons-io:2.11.0")
-    implementation("org.opencv:opencv:4.9.0")
-    implementation("com.airbnb.android:lottie:6.4.1")
-    implementation("com.airbnb.android:lottie-compose:6.4.1")
-    implementation("com.jaredrummler:android-device-names:2.1.1")
-    implementation("com.github.mhshams:jnbis:1.1.0")
+    implementation("cl.amparo.id:amparo-sdk:1.0.0")
 }
 ```
-
-<!--
-## Further reading
-
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
--->
