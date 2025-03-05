@@ -1,5 +1,5 @@
 ---
-title: "Resources"
+title: "Introduction"
 description: ""
 summary: ""
 date: 2024-02-27T09:30:56+01:00
@@ -14,4 +14,4 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Link to valuable, relevant resources.
+SDK Introduction.
