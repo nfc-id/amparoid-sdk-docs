@@ -83,7 +83,7 @@ To customize the SDK colors, define colors in the `themes.xml` file:
 #### Defining texts
 
 To customize the SDK texts, define strings in the `strings.xml` file:
-```
+```xml
 <string name="amparo_id_sdk_success_message_1">¡Listo!</string>
 <string name="amparo_id_sdk_success_message_2">Lo hiciste muy bien.</string>
 <string name="amparo_id_sdk_error_no_verifications">No tienes verificaciones pendientes</string>
