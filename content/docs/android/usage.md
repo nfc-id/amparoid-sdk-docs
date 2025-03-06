@@ -74,11 +74,14 @@ amparoIdSdk!!.startActivityForResult(this@MainActivity, amparoIdSdkConfig, ampar
 
 To customize the SDK colors, define colors in the `themes.xml` file:
 ```
-<style name="AmparoIdSdkTheme" parent="AmparoIdSdkBaseTheme">
-    <item name="amparoIdPrimaryMain">@color/primaryMain</item>
-    <item name="amparoIdPrimaryLight">@color/primaryLight</item>
+<style name="AppTheme" parent="AmparoIdSdkTheme">
+    <item name="amparoIdPrimaryMain">@color/purple_200</item>
+    <item name="amparoIdPrimaryLight">@color/purple_500</item>
 </style>
 ```
+
+With `AppTheme` as the application theme, the SDK will use the defined colors for
+`amparoIdPrimaryMain` and `amparoIdPrimaryLight`.
 
 #### Defining texts
 
