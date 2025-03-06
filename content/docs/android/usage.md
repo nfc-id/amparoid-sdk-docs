@@ -83,6 +83,8 @@ To customize the SDK colors, define colors in the `themes.xml` file:
 #### Defining texts
 
 To customize the SDK texts, define strings in the `strings.xml` file:
+
+<!--
 ```xml
 <string name="amparo_id_sdk_success_message_1">¡Listo!</string>
 <string name="amparo_id_sdk_success_message_2">Lo hiciste muy bien.</string>
@@ -116,4 +118,38 @@ To customize the SDK texts, define strings in the `strings.xml` file:
 <string name="amparo_id_sdk_error_nfc_bad_reading_2">La carcasa de tu móvil bloquea el escaneo. **Retírala y vuelve a intentarlo.**</string>
 <string name="amparo_id_sdk_error_nfc_bad_reading_error_description">Por favor, revisa las posibles causas y cuando estés listo, vuelve a intentarlo.</string>
 ```
+-->
 
+| Name | String |
+|---------------|-------|
+| `amparo_id_sdk_success_message_1` | ¡Listo! |
+| `amparo_id_sdk_success_message_2` | Lo hiciste muy bien. |
+| `amparo_id_sdk_error_no_verifications` | No tienes verificaciones pendientes |
+| `amparo_id_sdk_error_disconnect` | No es posible continuar con la verificación |
+| `amparo_id_sdk_error_verification_failed` | No pudimos verificar tu identidad |
+| `amparo_id_sdk_error_incompatible` | Lo sentimos, esta app no está disponible para este dispositivo. |
+| `amparo_id_sdk_error_timer` | ¿Necesitas ayuda con este paso? |
+| `amparo_id_sdk_error_deprecated` | ¡Tenemos lista una nueva actualización! |
+| `amparo_id_sdk_error_nfc_disabled` | Activa el lector de NFC de tu dispositivo móvil |
+| `amparo_id_sdk_error_nfc_interrupted` | ¡Se interrumpió el proceso! |
+| `amparo_id_sdk_error_no_verifications_description` | No encontramos verificaciones asociadas a tu RUT. Si crees que esto es un error, por favor contáctanos. |
+| `amparo_id_sdk_error_disconnect_description` | En este momento nuestros servicios no están disponibles, estamos trabajando en resolverlo. Inténtalo más tarde. |
+| `amparo_id_sdk_error_without_retry_description` | Por favor contacta a un ejecutivo. |
+| `amparo_id_sdk_error_with_retry_description` | Por favor inténtalo de nuevo o contáctanos. |
+| `amparo_id_sdk_error_incompatible_description` | Contáctanos para que podamos ayudarte. |
+| `amparo_id_sdk_error_deprecated_description` | Para que tu App sea aún más segura y la puedas usar, necesitamos que esté actualizada. |
+| `amparo_id_sdk_error_disabled_description` | En **conexiones del dispositivo**, encuentra **NFC** y habilítalo. |
+| `amparo_id_sdk_error_interrupted_description` | Si luego de varios intentos el problema persiste, contacta a un ejecutivo. |
+| `amparo_id_sdk_error_retry_main_button` | Volver a intentar |
+| `amparo_id_sdk_error_got_it_main_button` | Entendido |
+| `amparo_id_sdk_error_incompatible_main_button` | Contactar a Servicio al Cliente |
+| `amparo_id_sdk_error_timer_main_button` | Contactar a Servicio al Cliente |
+| `amparo_id_sdk_error_deprecated_main_button` | Actualizar App |
+| `amparo_id_sdk_error_nfc_disabled_main_button` | Abrir conexiones |
+| `amparo_id_sdk_error_nfc_interrupted_main_button` | Volver a escanear |
+| `amparo_id_sdk_error_contact_support_secondary_button` | Contactar a Servicio al Cliente |
+| `amparo_id_sdk_error_later_secondary_button` | En otro momento |
+| `amparo_id_sdk_error_dismiss_secondary_button` | No, gracias |
+| `amparo_id_sdk_error_nfc_bad_reading_1` | La cédula de identidad fue **retirada durante el escaneo**. |
+| `amparo_id_sdk_error_nfc_bad_reading_2` | La carcasa de tu móvil bloquea el escaneo. **Retírala y vuelve a intentarlo.** |
+| `amparo_id_sdk_error_nfc_bad_reading_error_description` | Por favor, revisa las posibles causas y cuando estés listo, vuelve a intentarlo. |
