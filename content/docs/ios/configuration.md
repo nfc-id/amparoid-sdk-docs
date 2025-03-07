@@ -32,7 +32,7 @@ let config = AmparoIdConfig(
         skmKey: SKM_KEY,
         eCert: E_CERT, 
         resultCallback: {result in
-                print("The flux response is : \(result)")
+                print("The response is : \(result)")
         })
 ````
 
