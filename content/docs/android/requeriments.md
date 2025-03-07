@@ -15,11 +15,11 @@ seo:
 ---
 
 The Amparo ID team will provide the following information:
-- API Key
-- API URL
-- SKM Key
-- KSM Key
-- E Cert
-- Access to the private repository containing the SDK
+- API Key: key for API endpoint consumption.
+- API URL: API base url.
+- SKM Key: SDK security key.
+- KSM Key: SDK security key.
+- E Cert: security certificate used by the SDK.
+- Access to the private repository containing the SDK.
 
 After meeting these requirements, you can proceed with the SDK installation and configuration.

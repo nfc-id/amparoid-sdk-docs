@@ -15,29 +15,38 @@ seo:
 ---
 ### Register Activity Request for Result
 
-Before initializing the SDK, an activity must be defined to receive the result:
+Before initializing the SDK, an activity must be defined to receive the result.
+For this purpose, use the `registerForActivityResult` method with the `AmparoIdResultContract` 
+contract which will be used to launch the SDK. The following code snippet shows how to register
 ```
-private val amparoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-    if (result.resultCode == Activity.RESULT_OK) {
-        val sdkResult = result.data?.getStringExtra("SDK_RESULT")
-        Toast.makeText(this, "SDK Result: $sdkResult", Toast.LENGTH_LONG).show()
-        // Manejar éxito
-    } else {
-        Toast.makeText(this, "SDK Cancelled or Failed", Toast.LENGTH_LONG).show()
-        // Manejar error o cancelación
+private val amparoLauncher = registerForActivityResult(AmparoIdResultContract()) { result ->
+    when (result) {
+        AmparoIdSdkResponse.SUCCESS -> onSuccess()
+        AmparoIdSdkResponse.CANCELLED  -> onCancelled()
+        else -> onFailure()
     }
 }
 ```
+
+Where `onSuccess()`, `onCancelled()`, and `onFailure()` are methods defined by you
+to be executed when the SDK returns a success, cancellation, or failure response, respectively.
+
+The `AmparoIdSdkResponse` enum contains the possible responses from the SDK:
+- `SUCCESS`: the SDK returned a successful response.
+- `CANCELLED`: the SDK was cancelled.
+- `FAILURE`: the SDK returned a failure response.
+
+When `SUCCESS` is returned, the identification result must be checked by your backend.
 
 ### Creating SDK Configuration
 
 The following parameters are required for SDK configuration:
 - `API_KEY`: key for API endpoint consumption.
 - `API_URL`: API base url.
-- `CONTACT_CALLBACK_URL`: contact URL for the SDK help buttons.
 - `E_CERT`: security certificate used by the SDK.
 - `KSM_KEY`: SDK security key.
 - `SKM_KEY`: SDK security key.
+- `CONTACT_SUPPORT`: your callback to contact support.
 
 To use the Amparo ID SDK, create a configuration using the `AmparoIdSdkConfig` object as shown
 below:
@@ -46,10 +55,10 @@ below:
 val amparoIdSdkConfig = AmparoIdSdkConfig.Builder()
     .setApiKey("API_KEY")
     .setBaseUrl("API_URL")
-    .setContactCallbackUrl("CONTACT_CALLBACK_URL")
     .setECert("E_CERT")
     .setKsmKey("KSM_KEY")
     .setSkmKey("SKM_KEY")
+    .setContactSupport { /* your callback to contact support */ }
     .build()
 ```
 
@@ -65,7 +74,6 @@ Call the SDK using the defined `launcher`:
 ```
 amparoIdSdk!!.startActivityForResult(this@MainActivity, amparoIdSdkConfig, amparoLauncher)
 ```
-
 
 
 ### SDK Customization
