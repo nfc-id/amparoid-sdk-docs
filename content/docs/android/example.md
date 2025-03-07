@@ -14,4 +14,6 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-Here include the SDK example.
+This section provides an example of how to implement the Amparo ID Android SDK in your app.
+The example is available on a private repository in [GitHub](https://github.com/nfc-id/amparoId-Android-SDK-sample).
+Please contact us to request access to the repository.
