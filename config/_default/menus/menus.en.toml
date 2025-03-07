@@ -28,14 +28,19 @@
   weight = 30
 
 [[sidebar_docs]]
+  name = "Overview"
+  pageRef = "/docs/overview"
+  weight = 10
+
+[[sidebar_docs]]
   name = "Android SDK"
   pageRef = "/docs/android"
-  weight = 10
+  weight = 20
 
 [[sidebar_docs]]
   name = "iOS SDK"
   pageRef = "/docs/ios"
-  weight = 20
+  weight = 30
 
 [[footer]]
   name = "Privacy Policy"

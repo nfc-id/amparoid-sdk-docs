@@ -14,7 +14,7 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-This documentation aims to guide the implementation of the Amparo ID SDK in Android mobile
+This documentation aims to guide the implementation of the Amparo ID SDK in mobile
 applications. Designed to provide an intuitive experience for both developers and end users,
 this SDK encapsulates a reliable identification process with multiple layers of security and
 validation.
