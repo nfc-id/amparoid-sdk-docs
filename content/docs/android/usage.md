@@ -128,6 +128,7 @@ To customize the SDK texts, define strings in the `strings.xml` file:
 <string name="amparo_id_sdk_error_nfc_bad_reading_1">La cédula de identidad fue **retirada durante el escaneo**.</string>
 <string name="amparo_id_sdk_error_nfc_bad_reading_2">La carcasa de tu móvil bloquea el escaneo. **Retírala y vuelve a intentarlo.**</string>
 <string name="amparo_id_sdk_error_nfc_bad_reading_error_description">Por favor, revisa las posibles causas y cuando estés listo, vuelve a intentarlo.</string>
+<string name="amparo_id_sdk_error_no_chl_id">La cédula que estás usando no es una cédula de identidad chilena. Por favor, verifica que sea la correcta y vuelve a intentarlo.</string>
 ```
 -->
 
