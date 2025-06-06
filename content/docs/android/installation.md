@@ -29,7 +29,7 @@ This repository requires authentication, so you will need to provide your GitHub
 ```
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/nfc-id/sdk_android")
+        url = uri("https://maven.pkg.github.com/nfc-id/amparoId-Android-SDK")
         credentials {
             username = System.getenv("GITHUB_USER")
             password = System.getenv("GITHUB_TOKEN")
