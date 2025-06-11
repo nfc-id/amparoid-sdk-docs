@@ -46,6 +46,14 @@ The main color option allows you to change the color of the identification proce
     config.mainColor = Color(red: 1, green: 0, blue: 0)
 ```
 
+### Default Country
+
+The default country option allows you to change the default image for the identity card in the identification process. By default is `CHL`. For now is compatible with `CHL` and `URY`. It receive a `String` in the 3 letter ISO country code .
+
+```swift
+    config.defaultCountry = "URY"
+```
+
 ### Help Message Time
 During the identification process if the user stays in one step for more than 30 seconds a message appears to suggest to contact support if they has problems. The time for the message can be adjusted by the `helpMessageTime` value. It receive an int in seconds.
 ```swift
