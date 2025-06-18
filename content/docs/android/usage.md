@@ -47,6 +47,8 @@ The following parameters are required for SDK configuration:
 - `KSM_KEY`: SDK security key.
 - `SKM_KEY`: SDK security key.
 - `CONTACT_SUPPORT`: your callback to contact support.
+- `DEFAULT_COUNTRY`: the default country for the SDK, which is `CHL` (Chile) by default.
+Support for other countries is available, such as `URY` (Uruguay).
 
 To use the Amparo ID SDK, create a configuration using the `AmparoIdSdkConfig` object as shown
 below:
@@ -59,6 +61,7 @@ val amparoIdSdkConfig = AmparoIdSdkConfig.Builder()
     .setKsmKey("KSM_KEY")
     .setSkmKey("SKM_KEY")
     .setContactSupport { /* your callback to contact support */ }
+    .setDefaultCountry("URY")
     .build()
 ```
 
