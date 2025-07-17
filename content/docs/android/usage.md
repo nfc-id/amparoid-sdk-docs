@@ -147,22 +147,22 @@ To customize the SDK texts, define strings in the `strings.xml` file:
 | `amparo_id_sdk_error_deprecated` | ¡Tenemos lista una nueva actualización! |
 | `amparo_id_sdk_error_nfc_disabled` | Activa el lector de NFC de tu dispositivo móvil |
 | `amparo_id_sdk_error_nfc_interrupted` | ¡Se interrumpió el proceso! |
+| `amparo_id_sdk_error_id_incompatible` |  No es posible validar esta cédula |
 | `amparo_id_sdk_error_no_verifications_description` | No encontramos verificaciones asociadas a tu RUT. Si crees que esto es un error, por favor contáctanos. |
 | `amparo_id_sdk_error_disconnect_description` | En este momento nuestros servicios no están disponibles, estamos trabajando en resolverlo. Inténtalo más tarde. |
 | `amparo_id_sdk_error_without_retry_description` | Por favor contacta a un ejecutivo. |
 | `amparo_id_sdk_error_with_retry_description` | Por favor inténtalo de nuevo o contáctanos. |
+| `amparo_id_sdk_error_id_incompatible_description` | Las cédulas con formato anterior no son compatibles con el proceso de verificación, por favor, comunícate al 1787 para que podamos asesorarte. |
 | `amparo_id_sdk_error_incompatible_description` | Contáctanos para que podamos ayudarte. |
 | `amparo_id_sdk_error_deprecated_description` | Para que tu App sea aún más segura y la puedas usar, necesitamos que esté actualizada. |
 | `amparo_id_sdk_error_disabled_description` | En **conexiones del dispositivo**, encuentra **NFC** y habilítalo. |
 | `amparo_id_sdk_error_interrupted_description` | Si luego de varios intentos el problema persiste, contacta a un ejecutivo. |
 | `amparo_id_sdk_error_retry_main_button` | Volver a intentar |
 | `amparo_id_sdk_error_got_it_main_button` | Entendido |
-| `amparo_id_sdk_error_incompatible_main_button` | Contactar a Servicio al Cliente |
-| `amparo_id_sdk_error_timer_main_button` | Contactar a Servicio al Cliente |
+| `amparo_id_sdk_contact_support_button` | Contactar a Servicio al Cliente |
 | `amparo_id_sdk_error_deprecated_main_button` | Actualizar App |
 | `amparo_id_sdk_error_nfc_disabled_main_button` | Abrir conexiones |
 | `amparo_id_sdk_error_nfc_interrupted_main_button` | Volver a escanear |
-| `amparo_id_sdk_error_contact_support_secondary_button` | Contactar a Servicio al Cliente |
 | `amparo_id_sdk_error_later_secondary_button` | En otro momento |
 | `amparo_id_sdk_error_dismiss_secondary_button` | No, gracias |
 | `amparo_id_sdk_error_nfc_bad_reading_1` | La cédula de identidad fue **retirada durante el escaneo**. |
