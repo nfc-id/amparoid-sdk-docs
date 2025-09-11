@@ -49,6 +49,7 @@ The following parameters are required for SDK configuration:
 - `CONTACT_SUPPORT`: your callback to contact support.
 - `DEFAULT_COUNTRY`: the default country for the SDK, which is `CHL` (Chile) by default.
 Support for other countries is available, such as `URY` (Uruguay).
+- `NFC_MAX_TRIES`: maximum number of NFC reading attempts, which is `3` by default.
 
 To use the Amparo ID SDK, create a configuration using the `AmparoIdSdkConfig` object as shown
 below:
@@ -62,6 +63,7 @@ val amparoIdSdkConfig = AmparoIdSdkConfig.Builder()
     .setSkmKey("SKM_KEY")
     .setContactSupport { /* your callback to contact support */ }
     .setDefaultCountry("URY")
+    .setNfcMaxTries(3)
     .build()
 ```
 
