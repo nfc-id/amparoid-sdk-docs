@@ -54,6 +54,14 @@ The default country option allows you to change the default image for the identi
     config.defaultCountry = "URY"
 ```
 
+### Nfc retry
+
+The nfc retry option allows you to change the number of retry in the NFC Step. By default is 3.
+
+```swift
+    config.nfcRetry = 3
+```
+
 ### Help Message Time
 During the identification process if the user stays in one step for more than 30 seconds a message appears to suggest to contact support if they has problems. The time for the message can be adjusted by the `helpMessageTime` value. It receive an int in seconds.
 ```swift
@@ -73,4 +81,5 @@ The configuration is with `contactButtonText` that defines a string as the text 
         print("Contacting support")
         WhatsappConn.openChatWith(phoneNumber: "+56900000000")
     }
+
 ```
