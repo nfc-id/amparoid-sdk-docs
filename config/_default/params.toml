@@ -67,8 +67,8 @@ mainSections = ["docs"]
 
   # Blog
   relatedPosts = false # false (default) or true
-  imageList = true # true (default) or false
-  imageSingle = true # true (default) or false
+  imageList = false # true (default) or false
+  imageSingle = false # true (default) or false
 
   # Repository
   editPage = false # false (default) or true
@@ -134,5 +134,5 @@ mainSections = ["docs"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
-    blogPosting = ["blog"] # BlogPosting sections
+    blogPosting = [] # BlogPosting sections
     product = [] # Product sections
