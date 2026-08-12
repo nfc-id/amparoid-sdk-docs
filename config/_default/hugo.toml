@@ -3,6 +3,7 @@ baseurl = "http://localhost/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
+ignoreFiles = ["^content/blog/"]
 # disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = false
@@ -57,7 +58,7 @@ copyRight = "Copyright (c) 2020-2024 Thulite"
   tag = "tags"
 
 [permalinks]
-  blog = "/blog/:slug/"
+#  blog = "/blog/:slug/"
   docs = "/docs/:sections[1:]/:slug/"
 # docs = "/docs/1.0/:sections[1:]/:slug/"
 
